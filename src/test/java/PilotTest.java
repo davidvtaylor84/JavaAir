@@ -26,5 +26,10 @@ public class PilotTest {
     public void canGetLicenceNumber(){
         assertEquals("007009", pilot.getLicenceNumber());
     }
+    
+    @Test
+    public void canFlyPlane(){
+        assertEquals("We are cruising at 36,000 feet", pilot.flyPlane());
+    }
 
 }

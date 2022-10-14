@@ -9,4 +9,8 @@ public class Pilot extends CrewMember{
     public String getLicenceNumber() {
         return licenceNumber;
     }
+
+    public String flyPlane(){
+        return "We are cruising at 36,000 feet";
+    }
 }
