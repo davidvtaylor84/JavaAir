@@ -53,4 +53,32 @@ public class Flight {
     public int getCapacity() {
         return capacity;
     }
+
+    public void addPilot(Pilot pilot){
+        this.pilots.add(pilot);
+    }
+
+    public void addCabinCrewMember(CabinCrewMember crew){
+        this.cabinCrew.add(crew);
+    }
+
+    public int getNumberOfPilots(){
+        return this.pilots.size();
+    }
+
+    public int getNumberOfCrewMembers(){
+        return this.cabinCrew.size();
+    }
+    public int getNumberOfPassengers(){
+        return this.passengers.size();
+    }
+
+    public void checkInPassenger(Passenger passenger){
+        if(this.capacity > this.getNumberOfPassengers()){
+            this.passengers.add(passenger);}
+    }
+
+    public int getNumberOfAvailableSeats(){
+        return this.capacity - this.getNumberOfPassengers();
+    }
 }
