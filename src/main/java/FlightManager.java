@@ -31,4 +31,8 @@ public class FlightManager {
         return  weightOfBagPerPerson() * noOfBags;
     }
 
+    public int calculateHowMuchWeightForLuggageRemains(int totalNoOfBags){
+        return calculateWeightReservedForLuggage() - (totalNoOfBags * weightOfBagPerPerson());
+    }
+
 }

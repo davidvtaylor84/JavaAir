@@ -42,6 +42,8 @@ public class FlightManagerTest {
     }
 
     @Test
-    public void 
+    public void canCalculateRemainingLuggageWeight(){
+        assertEquals(2820, flightManager.calculateHowMuchWeightForLuggageRemains(12));
+    }
 
 }
