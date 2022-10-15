@@ -21,18 +21,18 @@ public class FlightTest {
 
     @Before
     public void before(){
-        flight = new Flight("JAV456", "GLA","EDI", "1532", 5);
+        flight = new Flight("JAV456", "GLA","EDI", "1300", 5);
         pilot1 = new Pilot("Horace Attack-Vector", CrewMemberRank.CAPTAIN, "008008");
         pilot2 = new Pilot("Marlee Tichenor", CrewMemberRank.FIRST_OFFICER, "786023");
         crewMember1 = new CabinCrewMember("Jennifer Fillmeboots", CrewMemberRank.LEAD_ATTENDANT);
         crewMember2 = new CabinCrewMember("The Evil Saint", CrewMemberRank.FLIGHT_ATTENDANT);
         crewMember3 = new CabinCrewMember("Philomena Griswald", CrewMemberRank.FLIGHT_ATTENDANT);
-        passenger1 = new Passenger("My-Eyes-Are-Bleeding Johnson", 3);
-        passenger2 = new Passenger("Jane Doe", 2);
-        passenger3 = new Passenger("DB Cooper", 5);
-        passenger4 = new Passenger("Alison Hacker", 2);
-        passenger5 = new Passenger("Wee Jimmy Cranky", 1);
-        passenger6 = new Passenger("Sarah Hassenflug", 2);
+        passenger1 = new Passenger("My-Eyes-Are-Bleeding Johnson", 3, null, null);
+        passenger2 = new Passenger("Jane Doe", 2, null, null);
+        passenger3 = new Passenger("DB Cooper", 5, null, null);
+        passenger4 = new Passenger("Alison Hacker", 2, null, null);
+        passenger5 = new Passenger("Wee Jimmy Cranky", 1, null, null);
+        passenger6 = new Passenger("Sarah Hassenflug", 2, null, null);
         flight.addPilot(pilot1);
         flight.addPilot(pilot2);
         flight.addCabinCrewMember(crewMember1);

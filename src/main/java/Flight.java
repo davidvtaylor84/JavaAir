@@ -1,3 +1,6 @@
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class Flight {
@@ -47,7 +50,7 @@ public class Flight {
     }
 
     public String getDepartureTime() {
-        return departureTime;
+        return this.departureTime;
     }
 
     public int getCapacity() {
