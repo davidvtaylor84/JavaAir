@@ -78,6 +78,7 @@ public class Flight {
 
     public void checkInPassenger(Passenger passenger){
         if(this.capacity > this.getNumberOfPassengers()){
+            passenger.setFlight(this.flightNumber);
             this.passengers.add(passenger);}
     }
 

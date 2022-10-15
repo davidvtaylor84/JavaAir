@@ -27,12 +27,12 @@ public class FlightTest {
         crewMember1 = new CabinCrewMember("Jennifer Fillmeboots", CrewMemberRank.LEAD_ATTENDANT);
         crewMember2 = new CabinCrewMember("The Evil Saint", CrewMemberRank.FLIGHT_ATTENDANT);
         crewMember3 = new CabinCrewMember("Philomena Griswald", CrewMemberRank.FLIGHT_ATTENDANT);
-        passenger1 = new Passenger("My-Eyes-Are-Bleeding Johnson", 3, null, null);
-        passenger2 = new Passenger("Jane Doe", 2, null, null);
-        passenger3 = new Passenger("DB Cooper", 5, null, null);
-        passenger4 = new Passenger("Alison Hacker", 2, null, null);
-        passenger5 = new Passenger("Wee Jimmy Cranky", 1, null, null);
-        passenger6 = new Passenger("Sarah Hassenflug", 2, null, null);
+        passenger1 = new Passenger("My-Eyes-Are-Bleeding Johnson", 3, null, 0);
+        passenger2 = new Passenger("Jane Doe", 2, null, 0);
+        passenger3 = new Passenger("DB Cooper", 5, null, 0);
+        passenger4 = new Passenger("Alison Hacker", 2, null, 0);
+        passenger5 = new Passenger("Wee Jimmy Cranky", 1, null, 0);
+        passenger6 = new Passenger("Sarah Hassenflug", 2, null, 0);
         flight.addPilot(pilot1);
         flight.addPilot(pilot2);
         flight.addCabinCrewMember(crewMember1);

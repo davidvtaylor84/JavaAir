@@ -12,8 +12,8 @@ public class FlightManagerTest {
     @Before
     public void before(){
         flightManager = new FlightManager(6000, 200);
-        passenger1 = new Passenger("My-Eyes-Are-Bleeding Johnson", 3, null, null);
-        passenger2 = new Passenger("Jane Doe", 2, null, null);
+        passenger1 = new Passenger("My-Eyes-Are-Bleeding Johnson", 3, null, 0);
+        passenger2 = new Passenger("Jane Doe", 2, null, 0);
     }
 
     @Test

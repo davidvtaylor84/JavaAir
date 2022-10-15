@@ -3,9 +3,9 @@ public class Passenger {
     private String name;
     private int noOfBags;
     private String flight;
-    private String seatNumber;
+    private int seatNumber;
 
-    public Passenger(String name, int noOfBags, String flight, String seatNumber){
+    public Passenger(String name, int noOfBags, String flight, int seatNumber){
         this.name = name;
         this.noOfBags = noOfBags;
         this.flight = flight;
@@ -24,7 +24,15 @@ public class Passenger {
         return flight;
     }
 
-    public String getSeatNumber() {
+    public int getSeatNumber() {
         return seatNumber;
+    }
+
+    public void setFlight(String flight) {
+        this.flight = flight;
+    }
+
+    public void setSeatNumber(int seatNumber) {
+        this.seatNumber = seatNumber;
     }
 }

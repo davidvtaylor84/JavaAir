@@ -8,7 +8,7 @@ public class PassengerTest {
     Passenger passenger;
 
     @Before
-    public void before(){ passenger = new Passenger("Jimmy Schnitzel", 2, null, null);}
+    public void before(){ passenger = new Passenger("Jimmy Schnitzel", 2, null, 0);}
 
     @Test
     public void hasName(){
