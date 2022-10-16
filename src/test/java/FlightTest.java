@@ -88,6 +88,7 @@ public class FlightTest {
     public void canSetPassengerSeatRandomNumberWhenCheckedIn(){
         flight.checkInPassenger(passenger5);
         int value = passenger5.getSeatNumber();
+        System.out.println(value);
         Assert.assertTrue(value >0 && value <= flight.getCapacity());
     }
 

@@ -77,12 +77,14 @@ public class Flight {
         return this.passengers.size();
     }
 
+// uses a randomiser to assign seat
     public void checkInPassenger(Passenger passenger){
         if(this.capacity > this.getNumberOfPassengers()){
             Random rand = new Random();
             int upperbound = this.capacity;
+            int min = 1;
             passenger.setFlight(this.flightNumber);
-            passenger.setSeatNumber(rand.nextInt(upperbound));
+            passenger.setSeatNumber(rand.nextInt(upperbound-min)+1);
             this.passengers.add(passenger);}
     }
 
