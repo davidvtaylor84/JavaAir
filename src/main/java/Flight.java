@@ -2,6 +2,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Flight {
 
@@ -78,7 +79,10 @@ public class Flight {
 
     public void checkInPassenger(Passenger passenger){
         if(this.capacity > this.getNumberOfPassengers()){
+            Random rand = new Random();
+            int upperbound = this.capacity;
             passenger.setFlight(this.flightNumber);
+            passenger.setSeatNumber(rand.nextInt(upperbound));
             this.passengers.add(passenger);}
     }
 

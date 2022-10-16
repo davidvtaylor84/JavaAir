@@ -1,7 +1,10 @@
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.w3c.dom.ranges.Range;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class FlightTest {
 
@@ -74,5 +77,19 @@ public class FlightTest {
         flight.checkInPassenger(passenger6);
         assertEquals(5, flight.getNumberOfPassengers());
     }
+    @Test
+    public void canAddFlightNumberToPassengerWhenCheckedIn(){
+        flight.checkInPassenger(passenger6);
+        assertEquals("JAV456", passenger6.getFlight());
+    }
+
+    @Test
+//    test passes because I'm getting a random int between 1 and 6 for this flight.
+    public void canSetPassengerSeatRandomNumberWhenCheckedIn(){
+        flight.checkInPassenger(passenger5);
+        int value = passenger5.getSeatNumber();
+        Assert.assertTrue(value >0 && value <= flight.getCapacity());
+    }
+
 
 }
